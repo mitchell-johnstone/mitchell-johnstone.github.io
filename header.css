@@ -1,51 +1,62 @@
 /* Style the header with a grey background and some padding */
 .header {
     text-align: center;
-  
     position: sticky;
     top: 0;
+    display: block;
 
-    display: flex;
+    background-color: #C8B7A6;
+    /* background-image: url('image\ \(3\).jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
+}
 
-    overflow: hidden;
-    background-color: hsl(0, 0%, 60%);
-    padding: 20px 10px;
+.header .tabs {
     width: 100%;
+    justify-content: center;
+    /* justify-content: space-around; */
+    padding: 20px 10px;
+    display: flex;
 }
   
 /* Style the header links */
-.header a {
+.header .tabs a {
     color: black;
     text-align: center;
+    text-transform: capitalize;
     padding: 12px;
-    text-decoration: none;
+
+    margin: auto 20px;
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    border-width: 1px;
+    border-left: black;
+    border-right: black;
+
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
 }
-  
+
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+.header .tabs .logo {
+    padding: 0 0;
+    border-radius: 50%;
+    line-height: 0px;
+    overflow: hidden;
 }
 
 /* Change the background color on mouse-over */
-.header a:hover {
+.header .tabs a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Style the active/current link*/
-.header a.active {
-    background-color: dodgerblue;
+.header .tabs a.active {
+    background-color: rgb(165, 165, 165);
     color: white;
-}
-
-/* spread the links */
-.header.spread {
-    width: 100%;
-    justify-content: space-around;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -53,8 +64,5 @@
     .header a {
         display: block;
         text-align: left;
-    }
-    .header-right {
-        float: none;
     }
 }
