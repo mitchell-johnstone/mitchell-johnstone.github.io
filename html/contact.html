@@ -3,17 +3,18 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/form.css">
 </head>
 <html>
 <body>
     <div class="header">
-        <div class="title"><h1>Mitchell Johnstone's Portfolio</h1></div>
+        <div class="title"><a href="home.html"><h1>Mitchell Johnstone's Portfolio</h1></a></div>
         <div class="tabs">
             <a href="hobbies.html"><h1>Hobbies</h1></a>
             <div class="separator"></div>
             <a href="projects.html"><h1>Projects</h1></a>
             <div class="separator"></div>
-            <a href="home.html" class="logo"><img src="../resources/Profile.jpg"></a>
+            <a href="home.html" class="logo"><img src="../resources/Mitchell/Profile.jpg"></a>
             <div class="separator"></div>
             <a href="resume.html"><h1>Resume</h1></a>
             <div class="separator"></div>
@@ -26,9 +27,41 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
+
     <div class="content">
-        <p>According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees dont care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Lets shake it up a little. Barry! Breakfast is ready! Ooming! Hang on a second. Hello? </p>
+        <div id="fcf-form">
+            <h1 class="fcf-h3">Contact me!</h3>
+
+            <form id="fcf-form-id" class="fcf-form-class" method="POST" action="mailto:mitch2579@gmail.com">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <button type="submit" name="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <footer>
         <div class="social">
             <a title="Github Profile" href="https://github.com/mitchell-johnstone"><i class="icon ion-social-github"></i></a>

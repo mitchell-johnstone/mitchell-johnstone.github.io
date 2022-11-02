@@ -1,7 +1,9 @@
 body {
     margin: 0px;
-    font-family: sans-serif;
     background-color: rgb(236, 236, 236);
+
+    font-family: sans-serif;
+    font-size: large;
 }
 
 .content {
@@ -10,39 +12,54 @@ body {
     background-color: white;
 }
 
-/* Style the list */
-ul.breadcrumb {
-    width: fit-content;
-    margin: 0px 0px 0px 250px;
-    padding: 10px;
-    list-style: none;
-    background-color: #b8a99b;
-    justify-content: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+/* Set the row */
+.row {
+    justify-content: space-around;
+    display: flex;
+    margin: 0 -5px;
 }
 
-/* Display list items side by side */
-ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
+img {
+   width: 100% !important;
+   height: auto !important;
 }
 
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+.row > div {
+    margin: 5px;
 }
 
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-    color: #2f79bb;
-    text-decoration: none;
+.col_1 {
+    flex: 50%;
 }
 
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-    color: #204e77;
-    text-decoration: underline;
+.col_2 {
+    flex: 50%;
+}
+
+.col_3_span_1 {
+    flex: 33%;
+}
+
+.col_3_span_2 {
+    flex: 67%;
+}
+
+
+.js_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    /* padding-top: 56.25%; 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.js_container iframe {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
