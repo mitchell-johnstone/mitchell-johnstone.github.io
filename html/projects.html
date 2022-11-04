@@ -4,8 +4,6 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/gallery.css">
-    <!-- <script src="../js/CH093_double_pendulum/web/library/p5.js"></script> -->
-    <!-- <script src="../js/CH093_double_pendulum/web/sketch.js"></script> -->
 </head>
 <html>
 <body>
@@ -32,109 +30,203 @@
     <div class="content">
         <h1>My Projects!</h1>
 
-        <hr>
-        <h2>Embedded Systems</h2>
-        <p>
-            In the embedded systems track at MSOE, students work on a given board to develop programs.
-            The culmination of the work involves us configuring the system itself to route pins and memory addresses.
-            Using VHDL enabled us to communicate with a host of peripherals, including LEDs, servo motors, cameras, joysticks, gyros and LCD screens!
-            </p><p>
-            Honestly, this was my favorite class at MSOE. It was challenging in its complexity, but so satisfying when everything clicked 
-            and worked.
-        </p>
-        <div class="row">
-            <div class="col_3_span_1">
-                <img src="../resources/Embedded/hello.HEIC" alt="">
-            </div>
-            <div class="col_3_span_1">
-                <img src="../resources/Embedded/joystick.HEIC" alt="">
-            </div>
-            <div class="col_3_span_1">
-                <img src="../resources/Embedded/screen_small.png" alt="">
-            </div>
-        </div>
-
-        <hr>
-        <h2>Affinity Propogation</h2>
-        <div class="row">
-            <div class="col_3_span_1">
-                <p>
-                    Machine Learning is extremely complex, but can usually be thought of as a collection of algorithms for understanding data.
-                    </p><p>
-                    For our final project in the course, me and my roomate researched "Affinity Propogation", which is a form of clustering
-                    that enables our data points to relate to each other, communicating about which data points are the best at representing the entire data set.
-                    </p><p>
-                    To explore this algorithm fully, we found a dataset of music, and ran Affinity Propogation on it. The image on the left was the result!
-                </p>
-            </div>
-            <div class="col_3_span_2">
-                <img src="../resources/affinity_propogation.png" alt="">
-            </div>
-        </div>
-
-        <hr>
-        <h2>FEAR Robotics</h2>
-        <div class="row">
-            <div class="col_3_span_1">
-                <img src="../resources/Robots/Arm.JPG" alt="">
-            </div>
-            <div class="col_3_span_1">
-                <p>
-                    In High School, I joined the local robotics team, Nicolet FEAR! 
-                    This program ignited my passion for programming, pushing my to apply my skills to a real work problem. 
-                    In just my first year on the team, we went all the way to the world competition!
-                    </p><p>
-                    Branching out from the computer work on the team, using my skills from robotics and fabrication classes, I 
-                    ran for and assumed the role of Vice President of Operations on the team. With my assistance, we were able to
-                    construct many robots, all while learning how to engage with other teams in a graciously professional competition.
-                </p>
-            </div>
-            <div class="col_3_span_1">
-                <img src="../resources/Robots/climb.jpg" alt="">
-                <img src="../resources/Robots/Vex.JPG" alt="">
-            </div>
-        </div>
-
-        <hr>
-        <h2>Javascript Graphics</h2>
-        <div class="row">
-            <div class="col_3_span_2">
-                <div class="js_container">
-                    <iframe src="../js/CH093_double_pendulum/web/index.html" width="100%" height="fit"></iframe>
+        <!-- EMBEDDED SYSTEMS -->
+        <div>
+            <hr>
+            <h2>Embedded Systems</h2>
+            <div class="row">
+                <div class="col_3_span_1">
+                    <h5>Project Summary</h5>
+                    <p>
+                        The second year sequence in the Computer Engineering degree at MSOE involves the Embedded Systems track,
+                        where students gain experience working on developing on a physical board to execute various tasks.
+                        In the first class, Embedded 1, the student is provided a board to develop on, writing exclusively in ARM assembly.
+                        In the following class, Embedded 2, the student works with the same medium but instead develops in the C programming language.
+                        Lastly, in the capstone class Embedded 3, the student works with a new board that they must configure to connect to different peripherals.
+                        Throughout the quarter, the student will program in VHDL to define the computer system and any connections that are made to outside devices.
+                        Each program would build upon the last, slowly incorporating more and more outside devices, such as LEDs, servo motors, cameras, joysticks, gyros and LCD screens.
+                        The student worked individually to implement each peripheral, 
+                        slowly culminating to the final program to have a camera read in an image and display the image to an LCD screen.
+                    </p>
+                </div>
+                <div class="col_3_span_2">
+                    <h5>Project Analysis</h5>
+                    <p>
+                        I was able to implement all of the programs successfully, earning an A grade for each project in all of the classes.
+                        </p><p>
+                        From the first course, I learned the basics of interfacing with an embedded system, as well as how to program in ARM assembly.
+                        I learned how peripherals were communicated to in the board, both physically through the hardware and programmatically through the software.
+                        However, each program took a long time to develop, since ARM assembly is very verbose compared to higher-level languages.
+                        Nonetheless, I spent the necessary time to complete each program, learning how "systems on a chip" are developed.
+                        </p><p>
+                        The second class taught me how to develop in C, which seemed like a middle ground between high level programs like python and low level ARM.
+                        Otherwise, I used another set of peripherals, learning how to communicate through different protocols such as USART, I2C, and more.
+                        </p><p>
+                        The last class was the most complex and the most fun, since all of the safety structure of guidance in the first two classes were gone.
+                        I picked up how to program my board quickly, developing each program using a new peripheral.
+                        Refreshing on my VHDL, I was able to configure the board so the board's outputs and inputs connected to the right devices.
+                        I learned how to set my own system up so that the memory was configured best for my program, that way I could more easily program the software without complexity. 
+                        In the end, I was able to get my board to display camera images, which I had worried would be too challenging for me.
+                        </p><p>
+                        Honestly, this was my favorite class at MSOE. It was challenging in its complexity, but so satisfying when everything clicked 
+                        and worked.
+                    </p>
                 </div>
             </div>
-            <div class="col_3_span_1">
-                <p>
-                    Over the summer, I wanted to try learning a new language: javascript. I wanted to apply my learning on the way, 
-                    so I followed a youtube series on a graphics library, P5.js. I went through many of the topics brought up in the videos,
-                    compiler a repository of javascript animations.
-                    </p><p>
-                    To the left is a simulation of a double pendulum. Try moving the sliders to modify the simulation environment!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col_3_span_1">
-                <div class="js_container">
-                    <iframe src="../js/CH002_menger_sponge/web/index.html"></iframe>
+            <div class="row">
+                <div class="col_3_span_1">
+                    <img src="../resources/Embedded/hello.HEIC" alt="">
                 </div>
-            </div>
-            <div class="col_3_span_1">
-                <p>
-                    These are 2 more examples of programs I wrote!
-                    </p><p>
-                    To the left is a 3D menger sponge, which is a fractal of cubes. Fractals are so cool! 
-                    </p><p>
-                    On the right, it may look like slowly fading in hair, but it's really a simulation of perlin noise on a grid.
-                    perlin noise is a psuedo-random noise, and using it we can draw really cool shapes! 
-                </p>
-            </div>
-            <div class="col_3_span_1">
-                <div class="js_container">
-                    <iframe src="../js/perlin_noise/web/index.html"></iframe>
+                <div class="col_3_span_1">
+                    <img src="../resources/Embedded/joystick.HEIC" alt="">
+                </div>
+                <div class="col_3_span_1">
+                    <img src="../resources/Embedded/screen_small.png" alt="">
                 </div>
             </div>
         </div>
+
+        <!-- AFFINITY PROPOGATION -->
+        <div>
+            <hr>
+            <h2>Affinity Propogation</h2>
+            <div class="row">
+                <div class="col_3_span_1">
+                    <h5>Project Summary</h5>
+                    <p>
+                        As a Computer Scientist at MSOE, one of the required courses is Machine Learning.
+                        As the final project for the class, students must complete a research project, where they learn a new algorithm for data analysis.
+                        We had already learned many types of algorithms earlier, such as k-means and KNN, so now it was up to us to learn a new one.
+                        Students worked in groups of 2-3 people to do the full research of the algorithm and write a small program to demonstrate its effects.
+                        I grouped with my roommate at the time to research the Affinity Propogation algorithm for data clustering.
+                        Together, we had to use a dataset to test our algorithm, displaying the results and an explanation of the algorithm via presentation.
+                    </p>
+                </div>
+                <div class="col_3_span_2">
+                    <h5>Project Analysis</h5>
+                    <p>
+                        Through doing this research project, we learned how the algorithm worked well enough to be able to write an implementation ourselves.
+                        the algorithm is a form of clustering that enables our data points to relate to each other, communicating about which data points are the best at representing the entire data set.
+                        This research taught me how difficult it can be to find exactly the answers I'm looking for when trying to learn, since there's so much information on the internet.
+                        I found it rewarding to find the sources we had to learn the concepts, and learning how to implement the algorithm also helped me in understanding it.
+                        Through developing our own implementation, we also were able to practice our skills in python / matplotlib programming, dealing with data and displaying it coherently.
+                        To explore this algorithm fully, we found a dataset of music, and ran our written Affinity Propogation on it, displayed below. 
+                        However, we also needed other students to understand the algorithm at a high level view, so we compiled an easy-to-view presentation detailing the algorithm.
+                        This brought invaluable learning of how to break down a very complex problem to very simple steps for anyone with general Machine Learning knowledge to understand.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col_2">
+                    <img src="../resources/affinity_propogation.png" alt="">
+                </div>
+                <div class="col_2">
+                    <div class="js_container">
+                        <iframe src="https://msoe365-my.sharepoint.com/personal/johnstonem_msoe_edu/_layouts/15/Doc.aspx?sourcedoc={18fa56b1-7481-4453-b303-757b256665f3}&amp;action=embedview&amp;wdAr=1"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEAR -->
+        <div>
+            <hr>
+            <h2>FEAR Robotics</h2>
+            <div class="row">
+                <div class="col_3_span_1">
+                    <h5>Project Summary</h5>
+                    <p>
+                        <a href="https://nicoletfear.com/">Nicolet FEAR</a> was my high school robotics team.
+                        It took part in a robotic development competition called <a href="https://www.firstinspires.org/robotics/frc">FRC</a>, hosted by <a href="https://www.firstinspires.org/">FIRST</a>.
+                        Each year, we were given 6 weeks to develop a fully functioning robot designed to partake in the years game, 
+                        usually involving heavy competition and equally devoted cooperation on part of the teams.
+                        The robotics club at Nicolet is the largest group on the high school campus, which sometimes made it challenging to have to manage.
+                        However, the students worked together to accomplish all facets of development, from accruing team sponsorships to actually developing the physical robot.
+                        On the team, I mostly focussed on physical development, writing software that would run the robot, 
+                        welding and cutting components, fixing issues in design with a pit team, and managing groups as the vice president of operations on the team.
+                    </p>
+                </div>
+                <div class="col_3_span_2">
+                    <h5>Project Analysis</h5>
+                    <p>
+                        This program ignited my passion for programming! 
+                        I hadn't done any serious software development before, but I really wanted to join the team, and all of my friends had been on the programming team.
+                        Thus, I had to learn how to program to be on the team, where they used Java to control the robot.
+                        I quickly learned the fundamentals of programming. I started by developing small projects to make the robot move with joystick input. 
+                        I got so good at programming that when the team went to the World Competition, I was brought along as one of the lead programmers.
+                        </p><p>
+                        The next year, I branched out to more physical building. 
+                        I learned the fundamentals of fabrication and robot design, working in different groups to create drive bases, pneumatic actuators, flywheel assemblies, and more.
+                        The next competition, I was brought on as a Pit Captian. This role meant that I was excellent in managing a highly skilled team of individuals, with the purpose of fixing any issues on the robot quickly.
+                        I had to learn how to communicate with my team members what I needed from them, as well as listen to their needs and the problem descriptions from the robot drivers.
+                        I also became extremely familiar with many various tools at our disposal.
+                        </p><p>
+                        In my last year on the team, I was elected as the Vice President of Operations.
+                        As VP of Ops, I was in charge of all aspects of development on the robot. I had a final say in any design choices, and worked with students to guide them and teach them new tools and processes.
+                        I learned too, how to manage multiple groups of people to achieve a common goal, how to teach others my skills, and even acquiring a certificate in 3D modeling.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col_2">
+                    <img src="../resources/Robots/Arm.JPG" alt="">
+                </div>
+                <div class="col_2">
+                    <img src="../resources/Robots/climb.jpg" alt="">
+                    <img src="../resources/Robots/Vex.JPG" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JAVASCRIPT GRAPHICS -->
+        <div>
+            <hr>
+            <h2>Javascript Graphics</h2>
+            <div class="row">
+                <div class="col_3_span_1">
+                    <h5>Project Summary</h5>
+                    <p>
+                        The summer of 2022, I had a personal goal to learn a new programming language.
+                        I ended up wanting to learn javascript, and decided that the best way to do that would be to develop something interesting to me.
+                        After some research I decided that doing some sort of graphical animation would be interesting to work on.
+                        I found a youtube series online done by <a href="https://www.youtube.com/watch?v=17WoOqgXsRM&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH">The Coding Train</a> that introduces a JS library.
+                        Starting from there, I worked on my own to implement programs to do different graphics.
+                        This was for my own learning, but I wanted to ensure I had a good grasp of the language, so I tried doing at least a dozen different programs.
+                    </p>
+                </div>
+                <div class="col_3_span_2">
+                    <h5>Project Analysis</h5>
+                    <p>
+                        While learning the library, I learned how to use a new form of documentation, since their documentation had good and bad aspects.
+                        With that, I was still able to write programs sufficiently. Most of the time I would start my development using the main topic from a video, and then checking my solution against theirs.
+                        That way I could challenge myself to use what I'd learned but always allowed myself to learn from them too.
+                        I think I did well overall! I implemented quite a few different programs, each using a new concept. Some of my favorites are shown below. 
+                        I had always been interested in Perlin Noise and had wanted to make my own implementation but never had the time. Here I was able to fully research and understand what the algorithm
+                        was doing and implment it myself! 
+                        I also am fascinated by fractals, which is why I chose to implement a Menger Sponge, also shown below, rotating in 3D space.
+                        In the end, I compiled a <a href="https://github.com/mitchell-johnstone/p5js">repository</a> of different programs written in P5js. 
+                        I also wanted to host my site using a lightweight server client, which I also had to learn how to incorporate into my projects, and did so successfully.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col_3_span_2">
+                    <div class="js_container">
+                        <iframe src="../js/CH093_double_pendulum/web/index.html" width="100%" height="fit"></iframe>
+                    </div>
+                </div>
+                <div class="col_3_span_1">
+                    <div class="js_container">
+                        <iframe src="../js/CH002_menger_sponge/web/index.html"></iframe>
+                    </div>
+                    <div class="js_container">
+                        <iframe src="../js/perlin_noise/web/index.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <footer>
         <div class="social">

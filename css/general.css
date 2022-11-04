@@ -7,7 +7,7 @@ body {
 }
 
 p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .content {
@@ -46,6 +46,18 @@ img {
 
 .col_3_span_2 {
     flex: 67%;
+}
+
+.col_4_span_1 {
+    flex:25%
+}
+
+.col_4_span_2 {
+    flex:50%
+}
+
+.col_4_span_3 {
+    flex:75%
 }
 
 
