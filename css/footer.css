@@ -3,7 +3,7 @@
 footer {
   padding:40px 0;
   background-color:#26272b;
-  color:#4b4c4d;
+  color: rgb(196, 196, 196)
 }
 
 footer ul {
@@ -45,11 +45,11 @@ footer .social > a {
   border:1px solid #ccc;
   margin:0 8px;
   color:inherit;
-  opacity:0.75;
+  opacity:1;
 }
 
 footer .social > a:hover {
-  opacity:0.9;
+  opacity:0.8;
 }
 
 footer  .copyright {
